@@ -1,4 +1,4 @@
-B1;2clanguage: cpp
+language: cpp
 
 compiler:
  - clang
