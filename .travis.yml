@@ -9,6 +9,8 @@ env:
     - LIBSTDC_VERSION=4.9
     - CLANG_VERSION=3.5
 
+notifications:
+  email: false
 
 before_install:
   - sudo apt-get -f install zlib1g zlib1g-dev
