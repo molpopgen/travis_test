@@ -1,4 +1,4 @@
-language: cpp
+B1;2clanguage: cpp
 
 compiler:
 # - clang
@@ -27,3 +27,6 @@ install:
   # clang 3.5
   - if [ "$CXX" == "clang++" ]; then sudo apt-get --allow-unauthenticated -qq install build-essential libstdc++-${LIBSTDC_VERSION}-dev clang-${CLANG_VERSION}; fi
   - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.5"; fi
+
+script:
+ make
