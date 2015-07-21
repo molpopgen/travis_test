@@ -6,14 +6,16 @@ compiler:
 
 sudo: false
 
-addons: {apt: { packages: g++-4.8 clang++-3.6 zlib1g zlib1g-dev } }
+addons: {apt: { packages: gcc-4.8 clang-3.6 zlib1g zlib1g-dev } }
 
-install:
+#install:
   # g++4.8.1
-  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
+#  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8"; fi
 
   # clang 3.5
-  - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.6"; fi
+#  - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.6"; fi
 
 script:
- make
+ dpkg -l | grep clang
+ dpkg -l | grep gcc
+ $CXX --version
