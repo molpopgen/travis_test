@@ -6,13 +6,7 @@ compiler:
 
 sudo: false
 
-addons:
-  apt:
-    packages:
-    - g++-4.8
-    - clang++-3.6
-    - zlib1g
-    - zlib1g-dev
+addons: {apt: { packages: g++-4.8 clang++-3.6 zlib1g zlib1g-dev } }
 
 install:
   # g++4.8.1
