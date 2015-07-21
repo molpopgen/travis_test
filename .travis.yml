@@ -1,4 +1,4 @@
-language: cpp
+B1;2clanguage: cpp
 
 compiler:
  - clang
@@ -8,10 +8,11 @@ sudo: false
 
 addons:
  apt:
-  - g++-4.8
-  - clang++-3.6
-  - zlib1g
-  - zlib1g-dev
+  packages:
+   - g++-4.8
+   - clang++-3.6
+   - zlib1g
+   - zlib1g-dev
 
 install:
   # g++4.8.1
