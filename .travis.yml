@@ -16,6 +16,5 @@ addons: {apt: { packages: gcc-4.8 clang-3.6 zlib1g zlib1g-dev } }
 #  - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.6"; fi
 
 script:
- dpkg -l | grep clang
- dpkg -l | grep gcc
- $CXX --version
+ g++ --version
+ clang++ --version
