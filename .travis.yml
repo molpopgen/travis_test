@@ -9,9 +9,8 @@ install:
 - if [ "$CXX" = "clang++" ]; then export CXX="clang++-3.6" CC="clang--3.6"; fi
 addons:
   apt:
-    sources:
-    - ubuntu-toolchain-r-test
     packages:
+    - ubuntu-toolchain-r-test
     - libyajl-dev
     - libxml2-dev
     - gcc-4.8
