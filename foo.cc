@@ -4,5 +4,5 @@
 int main()
 {
   auto x = 5;
-  SimData d;
+  Sequence::SimData d;
 }
