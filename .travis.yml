@@ -25,7 +25,7 @@ notifications:
 
 before_install:
   - if [ "$CXX" == "clang++" ]; then export CXX="clang++-3.6"; fi
-  - if [ "$CXX" == "g++" ]; then export CXX="f++-4.8"; fi
+  - if [ "$CXX" == "g++" ]; then export CXX="g++-4.8"; fi
 
 # before_install:
 #   - sudo apt-get -f install zlib1g zlib1g-dev
